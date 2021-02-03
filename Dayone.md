@@ -1,7 +1,17 @@
-
+# GIT基础命令
+```
+连接：git config --global user.name "lin-08"
+     git config --global user.email "1729150370@qq.com"
+初始化：git init 
+添加：git add.
+提交：git commit -m "文件名"
+git remote add origin 仓库地址
+拉取：git pull --rebase origin 仓库名称
+推：git push -u origin 来源名称：去处名称
+```
 # MarkDown基本语法
 ```
-1. 标题：几个“#”代表几级标题
+1. 标题：几个“# ”代表几级标题
 2. 加粗：**文本**
 3. 代码块：``` + 语言，点击Enter键
 4. 代码高亮显示：==文本==
