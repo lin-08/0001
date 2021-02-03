@@ -1,9 +1,9 @@
-JAVASCRIPT
+# JAVASCRIPT
 ```
 JavaScript是一种运行在客户端的脚本语言，也可以基于Node.js技术进行服务器端编程
 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行，
 ```
-作用
+## 作用
 ```
 1. 表单动态校验（密码强度检测）
 2. 网页特效
@@ -13,27 +13,27 @@ JavaScript是一种运行在客户端的脚本语言，也可以基于Node.js技
 6. 控制硬件-物联网（Ruff）
 7. 游戏开发（cocos2d-js）
 ```
-浏览器分成渲染引擎和JS引擎
+## 浏览器分成渲染引擎和JS引擎
 ```
 1. 渲染引擎：用来解析HTML与CSS，俗称内核，如blink、webkit
 2. JS引擎：也称JS解释器，用来读取网页中的JavaScript代码，对其处理后运行，如Chrome浏览器的V8
 ```
-JS组成
+## JS组成
 ```
 1. ECMAScript(也称JavaScript或JScript)：JavaScript语法，规定了JS编程语法和基础核心知识
 2. DOM：页面文档对象模型，是W3C组织推荐的处理可扩展标记语言的标准编程接口，通过DOM提供的借口可以对页面上的各种元素进行操作(大小、为止、颜色等)
 3. BOM：浏览器对象模型，它提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。通过BOM可以操作浏览器窗口，比如弹出框、控制浏览器跳转、获取分辨率等
 ```
-JS书写
+## JS书写
 ```
-1. 行内式`<input type="button" value="点我试试" onclick="alert('Hello World')" />`
-`- 可以将单行或少量JS代码写在HTML标签的事件属性中(以on开头的属性)`<br>
-`- 注意单双引号的使用：在HTMLL中我们推荐使用双引号，JS中我们推荐使用单引号`<br>
-`- 可读性差，在HTML中编写大量JS代码时，不方便阅读`
-2. 内嵌式 `<script> alert('HelloWorld~!');</script>`
-3. 外部式`<script src="文件名"></script>`
-`- 利于HTML页面代码结构化，把大段JS代码独立到页面之外，美观且方便`<br>
-`- 引用外部JS文件的script标签中间不可以代码`
+1. 行内式<input type="button" value="点我试试" onclick="alert('Hello World')" />
+ - 可以将单行或少量JS代码写在HTML标签的事件属性中(以on开头的属性)
+ - 注意单双引号的使用：在HTMLL中我们推荐使用双引号，JS中我们推荐使用单引号
+ - 可读性差，在HTML中编写大量JS代码时，不方便阅读
+2. 内嵌式 <script> alert('HelloWorld~!');</script>
+3. 外部式<script src="文件名"></script>
+ - 利于HTML页面代码结构化，把大段JS代码独立到页面之外，美观且方便
+ - 引用外部JS文件的script标签中间不可以代码
 ```
 JS注释
 ```
