@@ -6,7 +6,7 @@
 添加：git add.
 提交：git commit -m "文件名"
 git remote add origin 仓库地址
-拉取：git pull --rebase origin 仓库名称
+拉取：git pull --rebase origin 仓库名称(git@github.com:lin-08/0001.git)
 推：git push -u origin 来源名称：去处名称
 ```
 # MarkDown基本语法
