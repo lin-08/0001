@@ -13,10 +13,10 @@ SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也
 <br>③`SELECT DISTINCT 列名称 FROM 表名称` (关键词 DISTINCT 用于返回唯一不同的值。)
 <br>④`SELECT 列名称 FROM 表名称 WHERE 列 运算符 值`
 <br>例：`SELECT * FROM Persons WHERE City='Beijing'`
-⑤AND 和 OR 运算符
+<br>⑤AND 和 OR 运算符
 <br>例：`SELECT * FROM Persons WHERE (FirstName='Thomas' OR FirstName='William') AND LastName='Carter'`
-⑥ORDER BY 语句和DESC 关键字 
-<br>⑦ORDER BY 语句默认按照升序对记录进行排序,ASC升序，DESC则按照降序排序
+<br>⑥ORDER BY 语句和DESC 关键字 
+`ORDER BY 语句默认按照升序对记录进行排序,ASC升序，DESC则按照降序排序`
 <br>例：`SELECT Company, OrderNumber FROM Orders ORDER BY Company DESC, OrderNumber ASC`
 - UPDATE - 更新数据库表中的数据
 <br>`UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值`
