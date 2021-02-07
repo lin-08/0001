@@ -42,33 +42,33 @@ SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也
 <br>例：`SELECT * FROM Persons
 WHERE LastName
 BETWEEN 'Adams' AND 'Carter'`以字母顺序显示介于 "Adams"（包括）和 "Carter"（不包括）之间的
- - LIKE：用于在 WHERE 子句中搜索列中的指定模式
+  - LIKE：用于在 WHERE 子句中搜索列中的指定模式
 <br>例：`SELECT column_name(s)
 FROM table_name
 WHERE column_name LIKE 'pattern'`
- - IN：允许在 WHERE 子句中规定多个值
+  - IN：允许在 WHERE 子句中规定多个值
 <br>例：`- SELECT * FROM Persons
 WHERE LastName IN ('Adams','Carter')`选取姓氏为 Adams 和 Carter 的人
- - UNION：用于合并两个或多个 SELECT 语句的结果集
+  - UNION：用于合并两个或多个 SELECT 语句的结果集
 </b><br>要求：UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。
 <br></b>ps：UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名<b>
- - UNION ALL：UNION 命令只会选取不同的值，而UNION ALL会列出所有的值
- - IS NULL 和 IS NOT NULL
+  - UNION ALL：UNION 命令只会选取不同的值，而UNION ALL会列出所有的值
+  - IS NULL 和 IS NOT NULL
 <br>例：`SELECT LastName,FirstName,Address FROM Persons
 WHERE Address IS NULL`选取地址为空值的数据
 
 - 通配符
- - `"%"` 可用于定义通配符（模式中缺少的一个或多个字符字母）
+  - `"%"` 可用于定义通配符（模式中缺少的一个或多个字符字母）
 <br>- 'N%'：以 "N" 开始的
 <br>- '%g'：以 "g" 结尾的
 <br>- '%lon%'：包含"lon"的
- - `"_"`：仅替代一个字符
+  - `"_"`：仅替代一个字符
 <br>例：` SELECT * FROM Persons
 WHERE LastName LIKE 'C_r_er'`
- - `"[charlist]"`：字符列中的任何单一字符
+  - `"[charlist]"`：字符列中的任何单一字符
 <br>例：`SELECT * FROM Persons
 WHERE City LIKE '[ALN]%'`选取居住的城市以 "A" 或 "L" 或 "N" 开头的
- - `"[^charlist]或者[!charlist]"`：不在字符列中的任何单一字符
+  - `"[^charlist]或者[!charlist]"`：不在字符列中的任何单一字符
 <br>例：`SELECT * FROM Persons
 WHERE City LIKE '[!ALN]%'`选取居住的城市不以 "A" 或 "L" 或 "N" 开头的
 
@@ -113,7 +113,7 @@ WHERE City LIKE '[!ALN]%'`选取居住的城市不以 "A" 或 "L" 或 "N" 开头
 <br>(注释：4 位格式所允许的值：1901 到 2155。2 位格式所允许的值：70 到 69，表示从 1970 到 2069。)
 
 ## DDL语句
-#######  SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。
+  SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。
 
 - CREATE DATABASE ：创建新数据库
 - ALTER DATABASE ：修改数据库
@@ -261,7 +261,7 @@ ALTER City DROP DEFAULT`撤销
 <br>DATE - 格式:YYYY-MM-DD
 <br>DATETIME - 格式: YYYY-MM-DD HH:MM:SS
 <br>TIMESTAMP - 格式: YYYY-MM-DD HH:MM:SS
-<br>YEAR - 格式 YYYY 或 YY
+<br>YEAR - 格式：YYYY 或 YY
 -  ISNULL()、NVL()、IFNULL() 和 COALESCE() 函数(相同作用用于不同数据库)：用于规定如何处理 NULL 值，将NULL值返回0便于计算
 
 
