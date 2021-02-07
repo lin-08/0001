@@ -147,21 +147,21 @@ ON Person (LastName, FirstName)`：创建多个索引
 <br>例：`SELECT TOP number|percent column_name(s)FROM table_name`:返回头几行|前百分之几行的数据
 <br>例：`SELECT TOP 50 PERCENT * FROM Persons` OR `SELECT TOP 2 * FROM Persons`
 - Alias：使用别名
- - 表别名：SELECT column_name(s) FROM table_name AS alias_name
- - 列别名：SELECT column_name AS alias_name FROM table_name
+  - 表别名：SELECT column_name(s) FROM table_name AS alias_name
+  - 列别名：SELECT column_name AS alias_name FROM table_name
 <br>例：`SELECT po.OrderID, p.LastName, p.FirstName
 FROM Persons AS p, Product_Orders AS po
 WHERE p.LastName='Adams' AND p.FirstName='John'`将表"Persons" 和 "Product_Orders"分别指定别名为"p" 和 "po"，并列出"John Adams"的相关数据
 - JOIN：用于根据两个或多个表中的列之间的关系，从这些表中查询数据
- - INNER JOIN: 如果表中有至少一个匹配，则返回行
+  - INNER JOIN: 如果表中有至少一个匹配，则返回行
 <br>例：`SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo
 FROM Persons
 INNER JOIN Orders
 ON Persons.Id_P = Orders.Id_P`
- - LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行(以左表选取的列为准，加入右表选出的列)
- - RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行(以右表选取的列为准加入左表选出的列)
- - FULL JOIN: 只要其中一个表中存在匹配，就返回行(相当于LEFT JOIN和RIGHT JOIN的合并结果)
-- SELECT INTO：语句可用于创建表的备份复件
+  - LEFT JOIN: 即使右表中没有匹配，也从左表返回所有的行(以左表选取的列为准，加入右表选出的列)
+  - RIGHT JOIN: 即使左表中没有匹配，也从右表返回所有的行(以右表选取的列为准加入左表选出的列)
+  - FULL JOIN: 只要其中一个表中存在匹配，就返回行(相当于LEFT JOIN和RIGHT JOIN的合并结果)
+ - SELECT INTO：语句可用于创建表的备份复件
 <br>例：`SELECT Persons.LastName,Orders.OrderNo
 INTO Persons_Order_Backup
 FROM Persons
