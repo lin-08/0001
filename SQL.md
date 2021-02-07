@@ -21,18 +21,15 @@ SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也
 <br>例：`SELECT * FROM Persons WHERE (FirstName='Thomas' OR FirstName='William') AND LastName='Carter'`
 <br>⑥ORDER BY 语句和DESC 关键字(ORDER BY 语句默认按照升序对记录进行排序,ASC升序，DESC则按照降序排序)
 <br>例：`SELECT Company, OrderNumber FROM Orders ORDER BY Company DESC, OrderNumber ASC`
-
-
+ 
 - UPDATE - 更新数据库表中的数据
 <br>`UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值`
 <br>例：`UPDATE Person SET Address = 'Zhongshan 23', City = 'Nanjing' WHERE LastName = 'Wilson'`(在Lastname为Wilson的Address列中更新为Zhongshan 23，City列中更新为Nanjing)
-
 
 - DELETE - 从数据库表中删除数据
 <br>①`DELETE FROM 表名称 WHERE 列名称 = 值`
 例：`DELETE FROM Person WHERE LastName = 'Wilson' `
 <br>②`DELETE FROM table_name` 或者 `DELETE * FROM table_name`
-
 
 - INSERT INTO - 向数据库表中插入数据
 <br>①`INSERT INTO table_name (列1, 列2,...) VALUES (值1, 值2,....)`
@@ -40,8 +37,8 @@ SQL (结构化查询语言)是用于执行查询的语法。但是 SQL 语言也
 <br>例：`INSERT INTO Persons (LastName, Address) VALUES ('Wilson', 'Champs-Elysees')`在Lastname列添加Wilson，在Addresss列添加Champs-Elysees
 ## 符号/关键字
 - 操作符
- - <>或者!= :不等于
- - BETWEEN：在 WHERE 子句中使用，作用是选取介于两个值之间的数据范围
+  - <>或者!= :不等于
+  - BETWEEN：在 WHERE 子句中使用，作用是选取介于两个值之间的数据范围
 <br>例：`SELECT * FROM Persons
 WHERE LastName
 BETWEEN 'Adams' AND 'Carter'`以字母顺序显示介于 "Adams"（包括）和 "Carter"（不包括）之间的
@@ -116,7 +113,7 @@ WHERE City LIKE '[!ALN]%'`选取居住的城市不以 "A" 或 "L" 或 "N" 开头
 <br>(注释：4 位格式所允许的值：1901 到 2155。2 位格式所允许的值：70 到 69，表示从 1970 到 2069。)
 
 ## DDL语句
-####### SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。
+#######  SQL 的数据定义语言 (DDL) 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。
 
 - CREATE DATABASE ：创建新数据库
 - ALTER DATABASE ：修改数据库
