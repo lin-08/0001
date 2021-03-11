@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Comatable" content="ie=edge">
+	<title>MissionTwo</title>
+	<script>
+        <!--No.1-->
+        var result = 1;
+        for(var i = 1; i< 66; i++){
+          result *= i;
+        }
+
+        console.log(result);
+
+        <!--No.2-->
+        var num = prompt('please type a number');
+
+        for(var i = 0; i < num; i++){
+            var str = '';
+            var st = '';
+          for(var j = 0; j <= i; j++){
+            str += ' ';
+          }
+
+            var a = num - (i * 2);
+          if(a>0){
+            for(var k = 1; k <= a; k++){
+              st += '$';	
+            }
+
+            var b = str + st ;
+            console.log(b);
+          }
+        }
+
+        <!--No.3-->
+        num1 = prompt('Please input a start number');
+        num2 = prompt('Please input an end number');
+
+        function factorialize(num1,num2){
+          var result = 1;
+          for(var i = num1; i <= num2; i++){
+            result *= i;
+          }
+          return result;
+        }
+        console.log(factorialize(num1,num2));
+
+	</script>
+</head>
