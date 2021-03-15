@@ -1,0 +1,97 @@
+# 行政审批系统前端页面
+
+## 功能需求
+
+- 用户端需求：
+  - 用户登录注册
+  - 用户可以进入个人界面查看相关个人信息和任务完成度
+  - 用户可以查看自己的任务列表
+  - 用户可以在任务列表中进行任务详情查看，任务提交和任务投诉
+- 管理端需求：
+  - 管理员查看所有用户，可以选择解冻或冻结用户
+  - 管理员查看所有监察任务列表，可以进行详情查看，通过任务，驳回任务，删除任务，指派任务
+  - 管理员可以查看当前用户的任务完成度
+
+
+
+## 相关技术
+
+- HTML，CSS，JavaScript
+- Vue，VueCli，axios
+- fastmock制作假接口
+- 组件库IView或ElementUI
+- 组件化思想
+
+
+
+## 加分项
+
+- 登录以及其他请求加载时有loading页面
+- 使用fastmock假数据传输
+- 前端UI可以有部分创新
+- 前端进行分页
+- 最好有模态框
+
+
+
+## 评分标准
+
+- 视乎功能需求的完成程度以及项目报告的完成程度
+- 代码质量高、实现功能多、代码功能注释良好的都可加分
+- 考核期间进步跨度大者优先考虑
+
+
+
+工具
+
+- 前端编辑器推荐`WebStorm`或`VSCode`
+
+
+
+## 其他要求
+
+- 可自行添加新功能
+- 考核最终所需提交文档材料：源代码以及项目报告
+  - 源代码包括整个项目的全部代码以及所调用的相关库
+  - 项目报告需包括系统具体实现了哪些功能、使用的fastmock假接口数据截图
+- 考核项目提交方式：
+  - 可以将源代码与项目报告一起打包发至邮箱
+  - 使用`Github`，将源代码与项目报告存放在自己的远程仓库中，并将仓库地址发至邮箱，记得备注学号姓名
+
+## 前端UI
+
+### 登录：
+
+![1](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314224202.png)
+
+### 用户端：
+
+![2](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314224253.png)
+
+![3](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314224309.png)
+
+![4](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314224317.png)
+
+![5](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314224328.png)
+
+### 管理端:
+
+![1](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230535.png)![2](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230806.png)
+
+![3](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230819.png)
+
+![4](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230901.png)
+
+
+
+
+
+![5](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230846.png)
+
+
+
+![6](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230915.png)
+
+
+
+![7](https://gitee.com/gdut_deepcode/ImageServer/raw/master/master/img/20210314230919.png)
